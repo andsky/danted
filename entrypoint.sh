@@ -2,8 +2,8 @@
 
 set -e
 
-if [ ! -e "/etc/danted.conf" ]; then
-	cat > /etc/danted.conf <<-EOF
+if [ ! -e "/etc/sockd.conf" ]; then
+	cat > /etc/sockd.conf <<-EOF
 		logoutput: stderr
 		internal: 0.0.0.0 port = 1080
 		external: eth0
